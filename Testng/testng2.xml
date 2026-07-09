@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="day1">
+  <parameter name="URL1" value="ayeshaali.com" />
+  <parameter name="APIKeyUser" value="12345" />
+    <classes>
+      <class name="TestNG.day1"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="day2">
+  <parameter name="URL2" value="hadiaali.com" />
+    <classes>
+      <class name="TestNG.day2"/>
+    </classes>
+  </test>
+  
+  
+   <!-- Test -->
+</suite> <!-- Suite -->
