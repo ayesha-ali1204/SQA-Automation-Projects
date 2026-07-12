@@ -20,8 +20,7 @@ public class ProductCatalogue extends abstractComponent{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-	
-	//PageFactory is exclusively for driver.findElements
+
 	@FindBy (css=".col-lg-4")
 	List<WebElement> products;
 	
@@ -33,7 +32,7 @@ public class ProductCatalogue extends abstractComponent{
 	
 	public List<WebElement> getProductList() {
 		waitForElementToAppear(productsBy);
-		System.out.println("Items fetched");
+//		System.out.println("Items fetched");
 		return products;
 	}
 	
@@ -41,7 +40,7 @@ public class ProductCatalogue extends abstractComponent{
 		List<WebElement> productsList = getProductList().stream()
 				.filter(p -> elementsToBuy.contains(p.findElement(productNames).getText().toLowerCase().trim()))
 				.collect(Collectors.toList());
-		System.out.println(productsList);
+//		System.out.println(productsList);
 		return productsList;
 	}
 	

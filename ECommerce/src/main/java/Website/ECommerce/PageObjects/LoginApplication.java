@@ -26,11 +26,19 @@ WebDriver driver;
 	@FindBy (id="login")
 	WebElement submit;
 	
+	@FindBy (css="div[aria-label='Incorrect email or password.']")
+	WebElement errorMsg;
 
 //	Get URL Method	
 	public void goTo() {
 		driver.get("https://rahulshettyacademy.com/client/#/auth/login");
 		driver.manage().window().maximize();
+	}
+	
+	public String LoginFailErrorMessage(){
+		waitForElementToBeVisible(errorMsg);
+		return errorMsg.getText();
+		
 	}
 
 //	Login to Application

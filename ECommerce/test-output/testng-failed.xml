@@ -3,13 +3,28 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Website.ECommerce.Tests.TestRun">
+      <class name="Website.ECommerce.Tests.LoginTest">
         <methods>
           <include name="LaunchApplication"/>
           <include name="TearDown"/>
-          <include name="SubmitOrder"/>
+          <include name="LoginWithValidCredentials"/>
         </methods>
-      </class> <!-- Website.ECommerce.Tests.TestRun -->
+      </class> <!-- Website.ECommerce.Tests.LoginTest -->
+      <class name="Website.ECommerce.Tests.AddProductToCart">
+        <methods>
+          <include name="LaunchApplication"/>
+          <include name="TearDown"/>
+          <include name="AddProducts"/>
+        </methods>
+      </class> <!-- Website.ECommerce.Tests.AddProductToCart -->
+      <class name="Website.ECommerce.Tests.VerifyOrders">
+        <methods>
+          <include name="LaunchApplication"/>
+          <include name="TearDown"/>
+          <include name="GoToOrders"/>
+          <include name="VerifyOrder"/>
+        </methods>
+      </class> <!-- Website.ECommerce.Tests.VerifyOrders -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
