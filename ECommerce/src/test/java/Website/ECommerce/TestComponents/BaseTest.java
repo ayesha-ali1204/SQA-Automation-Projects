@@ -27,10 +27,9 @@ public class BaseTest {
 //	create a properties class, that decides on runtime which browser to used for executing test cases
 	
 	public static  WebDriver driver;
-	
-	public LoginApplication loginApp;
-//	public OrdersPage orders;
-//	public ProductCatalogue prodcutCatelogue;
+	public static LoginApplication loginApp;
+	public static OrdersPage orders;
+	public static ProductCatalogue prodcutCatelogue;
 	
 	public WebDriver initializeDriver() throws IOException {
 		
@@ -64,7 +63,7 @@ public class BaseTest {
 		return driver;
 	}
 	
-	@BeforeMethod
+	@BeforeMethod (alwaysRun=true)
 	public LoginApplication LaunchApplication() throws IOException {
 		driver = initializeDriver();
 		loginApp = new LoginApplication(driver);
@@ -72,7 +71,7 @@ public class BaseTest {
 		return loginApp;
 	}
 	
-	@AfterMethod
+	@AfterMethod (alwaysRun=true)
 	public void TearDown() {
 		driver.close();
 	}

@@ -1,6 +1,7 @@
 package Website.ECommerce.PageObjects;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -28,10 +29,22 @@ public class OrdersPage extends abstractComponent{
 		waitForElementToAppear(ordersBy);
 		return ordersList;
 	}
+
+	public List<String> GetOrderNames() {
+
+		List<String> actualOrderedProducts = getOrdersList().stream()
+		.map(WebElement::getText)
+        .map(String::toLowerCase)
+        .collect(Collectors.toList());
+		return actualOrderedProducts;
+	}
 	
 	
-	public boolean VerifyOrderNames() {
-		boolean verifyOrderName = getOrdersList().stream().anyMatch(o -> o.getText().equalsIgnoreCase("ADIDAS ORIGINAL"));
-		return verifyOrderName;
+	public boolean VerifyOrdersProducts(List<String> prodOrdered) {
+		boolean status = GetOrderNames().stream().allMatch(s -> prodOrdered.contains(s));
+//		boolean status = cartItems.stream()
+//				.map(c -> c.getText().toLowerCase())
+//				.allMatch(elementsToBuy::contains);
+		return status;
 	}
 }
