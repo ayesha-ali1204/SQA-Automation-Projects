@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Website.ECommerce.PageObjects.CheckoutPage;
@@ -22,11 +23,11 @@ public class checkValidations extends BaseTest{
 	String country = "Pakistan";
 	
 	
-	@Test (groups= {"ErrorHandling"})
-	public void LoginWithWrongPasswordk() {
-		loginApp.Login("rbtestayesha@gmail.com", "12345");
+	@Test (groups= {"ErrorHandling"}, dataProvider="getDataLoginValidate")
+	public void LoginWithWrongPassword(String email, String password) {
+		loginApp.Login(email, password);
 		String T001_status = loginApp.LoginFailErrorMessage();
-		Assert.assertEquals(T001_status, "Incorrect email or password.");
+		Assert.assertEquals(T001_status, "Incorrect email password.");
 		
 	}
 //	@Test
@@ -53,6 +54,16 @@ public class checkValidations extends BaseTest{
 		OrdersPage orders = catalogue.goToOrdersPage();
 		boolean status = orders.VerifyOrdersProducts(productsToBuy);
 		Assert.assertTrue(status);
+	}
+	
+	@DataProvider
+	public Object[][] getDataLoginValidate() {
+		return new Object[] []
+				{
+			{"rbtestayesha@gmail.com", "Abcd@12"},
+//			{"rbtestayesha@gmail.com", "Abcd3"},	
+//			{"rbtest@gmail.com", "Abcd"}
+				};	
 	}
 //	
 }

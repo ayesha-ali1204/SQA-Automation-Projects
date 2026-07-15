@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Website.ECommerce.Tests.checkValidations">
+      <class name="Website.ECommerce.Tests.TestRun">
         <methods>
           <include name="LaunchApplication"/>
           <include name="TearDown"/>
-          <include name="SubmitOrder"/>
-          <include name="VerifyOrder"/>
+          <include name="Purchase"/>
+          <include name="PurchaseOrder"/>
         </methods>
-      </class> <!-- Website.ECommerce.Tests.checkValidations -->
+      </class> <!-- Website.ECommerce.Tests.TestRun -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
