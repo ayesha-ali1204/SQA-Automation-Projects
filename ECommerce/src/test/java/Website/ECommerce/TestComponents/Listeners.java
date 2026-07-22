@@ -16,23 +16,28 @@ import Website.ECommerce.Resources.ExtendReporterNG;
 public class Listeners extends BaseTest implements ITestListener{
 	ExtentTest test;
 	ExtentReports extent = ExtendReporterNG.GetReportObject();
+//	helps to avoid the concurrency of test that are run.
+	ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 	
 	// Invoked before each test method is run
     @Override
     public void onTestStart(ITestResult result) {
        test = extent.createTest(result.getMethod().getMethodName());
+       extentTest.set(test); //assign unique id to every test i.e. run. 
     }
 
     // Invoked each time a test succeeds
     @Override
     public void onTestSuccess(ITestResult result) {
-    	test.log(Status.PASS, "Test Passed!");
+    	extentTest.get().log(Status.PASS, "Test Passed!");
     }
 
     // Invoked each time a test fails
     @Override
     public void onTestFailure(ITestResult result) {
-        test.fail(result.getThrowable());
+//      test.fail(result.getThrowable());
+////    	replacing test with the extentTest.get()
+    	extentTest.get().fail(result.getThrowable());
         try {
 			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (Exception e1) {
@@ -48,7 +53,7 @@ public class Listeners extends BaseTest implements ITestListener{
 			e.printStackTrace();
 		}
 //        attaching screenshot to the report
-        test.addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
+        extentTest.get().addScreenCaptureFromPath(filePath, result.getMethod().getMethodName());
     }
 
     // Invoked each time a test is skipped

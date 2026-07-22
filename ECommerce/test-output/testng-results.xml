@@ -1,227 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-15T22:35:57 PKT" name="Suite" finished-at="2026-07-15T22:37:38 PKT" duration-ms="101376">
+  <suite started-at="2026-07-23T01:28:28 PKT" name="Suite" finished-at="2026-07-23T01:29:04 PKT" duration-ms="35894">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="checkValidations.LoginWithWrongPassword(java.lang.String,java.lang.String)[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" name="LoginWithWrongPassword" class="Website.ECommerce.Tests.checkValidations"/>
-      </group> <!-- ErrorHandling -->
-      <group name="PurchaseOrderTest">
-        <method signature="TestRun.PurchaseOrder(java.util.HashMap)[pri:0, instance:Website.ECommerce.Tests.TestRun@32115b28]" name="PurchaseOrder" class="Website.ECommerce.Tests.TestRun"/>
-      </group> <!-- PurchaseOrderTest -->
     </groups>
-    <test started-at="2026-07-15T22:35:57 PKT" name="Order Submission Test" finished-at="2026-07-15T22:36:54 PKT" duration-ms="57411">
-      <class name="Website.ECommerce.Tests.TestRun">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.TestRun@32115b28]" started-at="2026-07-15T22:35:57 PKT" name="LaunchApplication" finished-at="2026-07-15T22:36:08 PKT" duration-ms="10667" status="PASS">
+    <test started-at="2026-07-23T01:28:28 PKT" name="Login Regression" finished-at="2026-07-23T01:29:04 PKT" duration-ms="35894">
+      <class name="Website.ECommerce.Tests.LoginTests">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:28 PKT" name="LaunchApplication" finished-at="2026-07-23T01:28:33 PKT" duration-ms="4908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="PurchaseOrder(java.util.HashMap)[pri:0, instance:Website.ECommerce.Tests.TestRun@32115b28]" started-at="2026-07-15T22:36:08 PKT" name="PurchaseOrder" data-provider="getDataJson" finished-at="2026-07-15T22:36:32 PKT" duration-ms="23835" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="TC001_loginWithInCorrectEmail()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:33 PKT" name="TC001_loginWithInCorrectEmail" finished-at="2026-07-23T01:28:34 PKT" duration-ms="970" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PurchaseOrder -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.TestRun@32115b28]" started-at="2026-07-15T22:36:32 PKT" name="TearDown" finished-at="2026-07-15T22:36:32 PKT" duration-ms="411" status="PASS">
+        </test-method> <!-- TC001_loginWithInCorrectEmail -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:34 PKT" name="TearDown" finished-at="2026-07-23T01:28:34 PKT" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.TestRun@32115b28]" started-at="2026-07-15T22:36:32 PKT" name="LaunchApplication" finished-at="2026-07-15T22:36:38 PKT" duration-ms="6137" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:34 PKT" name="LaunchApplication" finished-at="2026-07-23T01:28:39 PKT" duration-ms="4271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="PurchaseOrder(java.util.HashMap)[pri:0, instance:Website.ECommerce.Tests.TestRun@32115b28]" started-at="2026-07-15T22:36:38 PKT" name="PurchaseOrder" data-provider="getDataJson" finished-at="2026-07-15T22:36:53 PKT" duration-ms="14941" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="TC002_loginWithInCorrectPassword()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:39 PKT" name="TC002_loginWithInCorrectPassword" finished-at="2026-07-23T01:28:40 PKT" duration-ms="872" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PurchaseOrder -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.TestRun@32115b28]" started-at="2026-07-15T22:36:53 PKT" name="TearDown" finished-at="2026-07-15T22:36:54 PKT" duration-ms="872" status="PASS">
+        </test-method> <!-- TC002_loginWithInCorrectPassword -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:40 PKT" name="TearDown" finished-at="2026-07-23T01:28:40 PKT" duration-ms="295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- Website.ECommerce.Tests.TestRun -->
-    </test> <!-- Order Submission Test -->
-    <test started-at="2026-07-15T22:36:56 PKT" name="Validation Check Test" finished-at="2026-07-15T22:37:38 PKT" duration-ms="42276">
-      <class name="Website.ECommerce.Tests.checkValidations">
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" started-at="2026-07-15T22:36:56 PKT" name="LaunchApplication" finished-at="2026-07-15T22:37:02 PKT" duration-ms="6561" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:40 PKT" name="LaunchApplication" finished-at="2026-07-23T01:28:44 PKT" duration-ms="4219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="SubmitOrder()[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" started-at="2026-07-15T22:37:02 PKT" name="SubmitOrder" finished-at="2026-07-15T22:37:26 PKT" duration-ms="23192" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element found by By.cssSelector: #toast-container
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\tayya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57814}, goog:processID: 15116, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57814/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: #toast-container
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: '4.45.0', revision: 'cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\tayya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57814}, goog:processID: 15116, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57814/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-at Website.ECommerce.AbstractComponents.abstractComponent.waitForElementToAppear(abstractComponent.java:35)
-at Website.ECommerce.PageObjects.ProductCatalogue.lambda$1(ProductCatalogue.java:53)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at Website.ECommerce.PageObjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:50)
-at Website.ECommerce.Tests.checkValidations.SubmitOrder(checkValidations.java:42)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="TC003_invalidCredentialsTest()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:44 PKT" name="TC003_invalidCredentialsTest" finished-at="2026-07-23T01:28:45 PKT" duration-ms="1002" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SubmitOrder -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" started-at="2026-07-15T22:37:26 PKT" name="TearDown" finished-at="2026-07-15T22:37:27 PKT" duration-ms="560" status="PASS">
+        </test-method> <!-- TC003_invalidCredentialsTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:45 PKT" name="TearDown" finished-at="2026-07-23T01:28:45 PKT" duration-ms="299" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" started-at="2026-07-15T22:37:27 PKT" name="LaunchApplication" finished-at="2026-07-15T22:37:34 PKT" duration-ms="6800" status="PASS">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:45 PKT" name="LaunchApplication" finished-at="2026-07-23T01:28:51 PKT" duration-ms="5205" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="LoginWithWrongPassword(java.lang.String,java.lang.String)[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" started-at="2026-07-15T22:37:34 PKT" name="LoginWithWrongPassword" data-provider="getDataLoginValidate" finished-at="2026-07-15T22:37:36 PKT" duration-ms="2603" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[rbtestayesha@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Abcd@12]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Incorrect email password.] but found [Incorrect email or password.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at Website.ECommerce.Tests.checkValidations.LoginWithWrongPassword(checkValidations.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="TC005_emptyPasswordTest()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:51 PKT" name="TC005_emptyPasswordTest" finished-at="2026-07-23T01:28:51 PKT" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginWithWrongPassword -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" started-at="2026-07-15T22:37:37 PKT" name="TearDown" finished-at="2026-07-15T22:37:38 PKT" duration-ms="636" status="PASS">
+        </test-method> <!-- TC005_emptyPasswordTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:51 PKT" name="TearDown" finished-at="2026-07-23T01:28:51 PKT" duration-ms="274" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method signature="VerifyOrder()[pri:0, instance:Website.ECommerce.Tests.checkValidations@7bf3a5d8]" started-at="2026-07-15T22:37:38 PKT" name="VerifyOrder" finished-at="2026-07-15T22:37:38 PKT" depends-on-methods="Website.ECommerce.Tests.checkValidations.SubmitOrder" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method Website.ECommerce.Tests.checkValidations.VerifyOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8 depends on not successfully finished methods 
-[Website.ECommerce.Tests.checkValidations.SubmitOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method Website.ECommerce.Tests.checkValidations.VerifyOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8 depends on not successfully finished methods 
-[Website.ECommerce.Tests.checkValidations.SubmitOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:51 PKT" name="LaunchApplication" finished-at="2026-07-23T01:28:58 PKT" duration-ms="6623" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyOrder -->
-      </class> <!-- Website.ECommerce.Tests.checkValidations -->
-    </test> <!-- Validation Check Test -->
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="TC006_emptyFieldsTest()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:58 PKT" name="TC006_emptyFieldsTest" finished-at="2026-07-23T01:28:59 PKT" duration-ms="588" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006_emptyFieldsTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:59 PKT" name="TearDown" finished-at="2026-07-23T01:28:59 PKT" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:28:59 PKT" name="LaunchApplication" finished-at="2026-07-23T01:29:03 PKT" duration-ms="4166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="TC007_invalidEmailFormatTest()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:29:03 PKT" name="TC007_invalidEmailFormatTest" finished-at="2026-07-23T01:29:04 PKT" duration-ms="597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007_invalidEmailFormatTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Website.ECommerce.Tests.LoginTests@36804139]" started-at="2026-07-23T01:29:04 PKT" name="TearDown" finished-at="2026-07-23T01:29:04 PKT" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Website.ECommerce.Tests.LoginTests -->
+    </test> <!-- Login Regression -->
   </suite> <!-- Suite -->
 </testng-results>

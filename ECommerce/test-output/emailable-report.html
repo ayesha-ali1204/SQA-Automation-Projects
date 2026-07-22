@@ -9,38 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Order Submission Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">57,411</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Validation Check Test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">42,276</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num attn">2</th><th class="num">99,687</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Login Regression</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">35,894</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Order Submission Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">Website.ECommerce.Tests.TestRun</td><td><a href="#m0">PurchaseOrder</a></td><td rowspan="2">1784136998728</td><td rowspan="2">14941</td></tr><tr class="passedeven"><td><a href="#m1">PurchaseOrder</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Validation Check Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Website.ECommerce.Tests.checkValidations</td><td><a href="#m2">LoginWithWrongPassword</a></td><td rowspan="1">1784137054051</td><td rowspan="1">2603</td></tr><tr class="failedeven"><td><a href="#m3">SubmitOrder</a></td><td rowspan="1">1784137022824</td><td rowspan="1">23192</td></tr><tr><th colspan="4">Validation Check Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">Website.ECommerce.Tests.checkValidations</td><td><a href="#m4">VerifyOrder</a></td><td rowspan="1">1784137058504</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">Website.ECommerce.Tests.LoginTests</td><td><a href="#m0">TC001_loginWithInCorrectEmail</a></td><td rowspan="1">1784752113621</td><td rowspan="1">970</td></tr><tr class="passedeven"><td><a href="#m1">TC002_loginWithInCorrectPassword</a></td><td rowspan="1">1784752119250</td><td rowspan="1">872</td></tr><tr class="passedeven"><td><a href="#m2">TC003_invalidCredentialsTest</a></td><td rowspan="1">1784752124641</td><td rowspan="1">1002</td></tr><tr class="passedeven"><td><a href="#m3">TC005_emptyPasswordTest</a></td><td rowspan="1">1784752131153</td><td rowspan="1">548</td></tr><tr class="passedeven"><td><a href="#m4">TC006_emptyFieldsTest</a></td><td rowspan="1">1784752138601</td><td rowspan="1">588</td></tr><tr class="passedeven"><td><a href="#m5">TC007_invalidEmailFormatTest</a></td><td rowspan="1">1784752143644</td><td rowspan="1">597</td></tr></tbody>
 </table>
-<h2>Order Submission Test</h2><h3 id="m0">Website.ECommerce.Tests.TestRun#PurchaseOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Website.ECommerce.Tests.TestRun#PurchaseOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Validation Check Test</h2><h3 id="m2">Website.ECommerce.Tests.checkValidations#LoginWithWrongPassword</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>rbtestayesha@gmail.com</td><td>Abcd@12</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
-	at Website.ECommerce.Tests.checkValidations.LoginWithWrongPassword(checkValidations.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Website.ECommerce.Tests.checkValidations#SubmitOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: #toast-container
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\tayya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57814}, goog:processID: 15116, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57814/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at Website.ECommerce.AbstractComponents.abstractComponent.waitForElementToAppear(abstractComponent.java:35)
-	at Website.ECommerce.PageObjects.ProductCatalogue.lambda$1(ProductCatalogue.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at Website.ECommerce.PageObjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:50)
-	at Website.ECommerce.Tests.checkValidations.SubmitOrder(checkValidations.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Website.ECommerce.Tests.checkValidations#VerifyOrder</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method Website.ECommerce.Tests.checkValidations.VerifyOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8 depends on not successfully finished methods 
-[Website.ECommerce.Tests.checkValidations.SubmitOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login Regression</h2><h3 id="m0">Website.ECommerce.Tests.LoginTests#TC001_loginWithInCorrectEmail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Website.ECommerce.Tests.LoginTests#TC002_loginWithInCorrectPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Website.ECommerce.Tests.LoginTests#TC003_invalidCredentialsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Website.ECommerce.Tests.LoginTests#TC005_emptyPasswordTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Website.ECommerce.Tests.LoginTests#TC006_emptyFieldsTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Website.ECommerce.Tests.LoginTests#TC007_invalidEmailFormatTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

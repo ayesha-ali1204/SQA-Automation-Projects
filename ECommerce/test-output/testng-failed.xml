@@ -4,17 +4,15 @@
   <listeners>
     <listener class-name="Website.ECommerce.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Validation Check Test(failed)">
+  <test thread-count="5" name="Login Regression(failed)">
     <classes>
-      <class name="Website.ECommerce.Tests.checkValidations">
+      <class name="Website.ECommerce.Tests.LoginTests">
         <methods>
           <include name="LaunchApplication"/>
           <include name="TearDown"/>
-          <include name="SubmitOrder"/>
-          <include name="LoginWithWrongPassword" invocation-numbers="0"/>
-          <include name="VerifyOrder"/>
+          <include name="TC004_emptyEmailTest"/>
         </methods>
-      </class> <!-- Website.ECommerce.Tests.checkValidations -->
+      </class> <!-- Website.ECommerce.Tests.LoginTests -->
     </classes>
-  </test> <!-- Validation Check Test(failed) -->
+  </test> <!-- Login Regression(failed) -->
 </suite> <!-- Failed suite [Suite] -->

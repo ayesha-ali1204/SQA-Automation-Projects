@@ -8,11 +8,14 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+//import com.sun.net.httpserver.Authenticator.Retry;
+
 import Website.ECommerce.PageObjects.CheckoutPage;
 import Website.ECommerce.PageObjects.ConfirmationPage;
 import Website.ECommerce.PageObjects.OrdersPage;
 import Website.ECommerce.PageObjects.ProductCatalogue;
 import Website.ECommerce.TestComponents.BaseTest;
+import Website.ECommerce.TestComponents.Retry;
 
 public class checkValidations extends BaseTest{
 	
@@ -23,7 +26,7 @@ public class checkValidations extends BaseTest{
 	String country = "Pakistan";
 	
 	
-	@Test (groups= {"ErrorHandling"}, dataProvider="getDataLoginValidate")
+	@Test (groups= {"ErrorHandling"}, dataProvider="getDataLoginValidate", retryAnalyzer=Retry.class)
 	public void LoginWithWrongPassword(String email, String password) {
 		loginApp.Login(email, password);
 		String T001_status = loginApp.LoginFailErrorMessage();

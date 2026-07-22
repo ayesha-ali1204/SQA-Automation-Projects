@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,17 +50,17 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\tayya\Projects-QA\ECommerce\TestSuites\testng.xml</span>
+                    <span>C:\Users\tayya\Projects-QA\ECommerce\LoginTestRegreesion.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>2 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,40 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,  1 skipped,  2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.checkValidations" class="method navigator-link" hash-for-method="LoginWithWrongPassword(rbtestayesha@gmail.com, Abcd@12)">LoginWithWrongPassword(rbtestayesha@gmail.com, Abcd@12)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.checkValidations" class="method navigator-link" hash-for-method="SubmitOrder">SubmitOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.checkValidations" class="method navigator-link" hash-for-method="VerifyOrder">VerifyOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -136,12 +103,32 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.TestRun" class="method navigator-link" hash-for-method="PurchaseOrder({password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]})">PurchaseOrder({password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.LoginTests" class="method navigator-link" hash-for-method="TC001_loginWithInCorrectEmail">TC001_loginWithInCorrectEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.TestRun" class="method navigator-link" hash-for-method="PurchaseOrder({password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]})">PurchaseOrder({password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.LoginTests" class="method navigator-link" hash-for-method="TC002_loginWithInCorrectPassword">TC002_loginWithInCorrectPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.LoginTests" class="method navigator-link" hash-for-method="TC003_invalidCredentialsTest">TC003_invalidCredentialsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.LoginTests" class="method navigator-link" hash-for-method="TC005_emptyPasswordTest">TC005_emptyPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.LoginTests" class="method navigator-link" hash-for-method="TC006_emptyFieldsTest">TC006_emptyFieldsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Website.ECommerce.Tests.LoginTests" class="method navigator-link" hash-for-method="TC007_invalidEmailFormatTest">TC007_invalidEmailFormatTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -156,91 +143,52 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Website.ECommerce.Tests.checkValidations</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginWithWrongPassword(rbtestayesha@gmail.com, Abcd@12)">
-                  </a> <!-- LoginWithWrongPassword(rbtestayesha@gmail.com, Abcd@12) -->
-                  <span class="method-name">LoginWithWrongPassword</span>
-                  <span class="parameters">(rbtestayesha@gmail.com,Abcd@12)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Incorrect email password.] but found [Incorrect email or password.]
-	at Website.ECommerce.Tests.checkValidations.LoginWithWrongPassword(checkValidations.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SubmitOrder">
-                  </a> <!-- SubmitOrder -->
-                  <span class="method-name">SubmitOrder</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.cssSelector: #toast-container
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.45.0&apos;, revision: &apos;cd6a3cd cd6a3cdfca6970f62e5bc8344109d0fe0e2af05e&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 150.0.7871.115, chrome: {chromedriverVersion: 150.0.7871.124 (9261fd0a595..., userDataDir: C:\Users\tayya\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57814}, goog:processID: 15116, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57814/devtoo..., se:cdpVersion: 150.0.7871.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
-	at Website.ECommerce.AbstractComponents.abstractComponent.waitForElementToAppear(abstractComponent.java:35)
-	at Website.ECommerce.PageObjects.ProductCatalogue.lambda$1(ProductCatalogue.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at Website.ECommerce.PageObjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:50)
-	at Website.ECommerce.Tests.checkValidations.SubmitOrder(checkValidations.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">Website.ECommerce.Tests.checkValidations</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyOrder">
-                  </a> <!-- VerifyOrder -->
-                  <span class="method-name">VerifyOrder</span>
-                  <div class="stack-trace">java.lang.Throwable: Method Website.ECommerce.Tests.checkValidations.VerifyOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8 depends on not successfully finished methods 
-[Website.ECommerce.Tests.checkValidations.SubmitOrder() on instance Website.ECommerce.Tests.checkValidations@7bf3a5d8]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Website.ECommerce.Tests.TestRun</span>
+              <span class="class-name">Website.ECommerce.Tests.LoginTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="PurchaseOrder({password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]})">
-                  </a> <!-- PurchaseOrder({password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]}) -->
-                  <span class="method-name">PurchaseOrder</span>
-                  <span class="parameters">({password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]})</span>
+                  <a name="TC001_loginWithInCorrectEmail">
+                  </a> <!-- TC001_loginWithInCorrectEmail -->
+                  <span class="method-name">TC001_loginWithInCorrectEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="PurchaseOrder({password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]})">
-                  </a> <!-- PurchaseOrder({password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]}) -->
-                  <span class="method-name">PurchaseOrder</span>
-                  <span class="parameters">({password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]})</span>
+                  <a name="TC002_loginWithInCorrectPassword">
+                  </a> <!-- TC002_loginWithInCorrectPassword -->
+                  <span class="method-name">TC002_loginWithInCorrectPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC003_invalidCredentialsTest">
+                  </a> <!-- TC003_invalidCredentialsTest -->
+                  <span class="method-name">TC003_invalidCredentialsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC005_emptyPasswordTest">
+                  </a> <!-- TC005_emptyPasswordTest -->
+                  <span class="method-name">TC005_emptyPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC006_emptyFieldsTest">
+                  </a> <!-- TC006_emptyFieldsTest -->
+                  <span class="method-name">TC006_emptyFieldsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC007_invalidEmailFormatTest">
+                  </a> <!-- TC007_invalidEmailFormatTest -->
+                  <span class="method-name">TC007_invalidEmailFormatTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,7 +196,7 @@ Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\tayya\Projects-QA\ECommerce\TestSuites\testng.xml</span>
+            <span class="header-content">C:\Users\tayya\Projects-QA\ECommerce\LoginTestRegreesion.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -258,16 +206,11 @@ Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb
   &lt;listeners&gt;
     &lt;listener class-name=&quot;Website.ECommerce.TestComponents.Listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Order Submission Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Login Regression&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Website.ECommerce.Tests.TestRun&quot;/&gt;
+      &lt;class name=&quot;Website.ECommerce.Tests.LoginTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Order Submission Test --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Validation Check Test&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;Website.ECommerce.Tests.checkValidations&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Validation Check Test --&gt;
+  &lt;/test&gt; &lt;!-- Login Regression --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -279,10 +222,7 @@ Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Order Submission Test (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Validation Check Test (1 class)</span>
+                <span class="test-name">Login Regression (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -292,22 +232,6 @@ Session ID: 8766fa3ae36560d6fac4c83b78ffd7fb
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">ErrorHandling</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">LoginWithWrongPassword</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">PurchaseOrderTest</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">PurchaseOrder</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -324,32 +248,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PurchaseOrder')
-data.setCell(0, 2, 'Website.ECommerce.Tests.TestRun')
-data.setCell(0, 3, 23835);
+data.setCell(0, 1, 'TC003_invalidCredentialsTest')
+data.setCell(0, 2, 'Website.ECommerce.Tests.LoginTests')
+data.setCell(0, 3, 1002);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SubmitOrder')
-data.setCell(1, 2, 'Website.ECommerce.Tests.checkValidations')
-data.setCell(1, 3, 23192);
+data.setCell(1, 1, 'TC001_loginWithInCorrectEmail')
+data.setCell(1, 2, 'Website.ECommerce.Tests.LoginTests')
+data.setCell(1, 3, 970);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'PurchaseOrder')
-data.setCell(2, 2, 'Website.ECommerce.Tests.TestRun')
-data.setCell(2, 3, 14941);
+data.setCell(2, 1, 'TC002_loginWithInCorrectPassword')
+data.setCell(2, 2, 'Website.ECommerce.Tests.LoginTests')
+data.setCell(2, 3, 872);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginWithWrongPassword')
-data.setCell(3, 2, 'Website.ECommerce.Tests.checkValidations')
-data.setCell(3, 3, 2603);
+data.setCell(3, 1, 'TC007_invalidEmailFormatTest')
+data.setCell(3, 2, 'Website.ECommerce.Tests.LoginTests')
+data.setCell(3, 3, 597);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'VerifyOrder')
-data.setCell(4, 2, 'Website.ECommerce.Tests.checkValidations')
-data.setCell(4, 3, 1);
+data.setCell(4, 1, 'TC006_emptyFieldsTest')
+data.setCell(4, 2, 'Website.ECommerce.Tests.LoginTests')
+data.setCell(4, 3, 588);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC005_emptyPasswordTest')
+data.setCell(5, 2, 'Website.ECommerce.Tests.LoginTests')
+data.setCell(5, 3, 548);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -375,61 +303,78 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Website.ECommerce.Tests.TestRun</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Website.ECommerce.Tests.LoginTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApplication</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">PurchaseOrder({password=Abcd@1234, email=rbtestayesha@gmail.com, products=[adidas original, iphone 13 pro]})</span>
-                <span class="method-start">10674 ms</span>
+                <span class="method-name">TC001_loginWithInCorrectEmail</span>
+                <span class="method-start">4923 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">34529 ms</span>
+                <span class="method-start">5901 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApplication</span>
-                <span class="method-start">34943 ms</span>
+                <span class="method-start">6281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">PurchaseOrder({password=Qwerty@12, email=ayeshaalishaikh1010@gmail.com, products=[zara coat 3]})</span>
-                <span class="method-start">41080 ms</span>
+                <span class="method-name">TC002_loginWithInCorrectPassword</span>
+                <span class="method-start">10552 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">56024 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Website.ECommerce.Tests.checkValidations</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">LaunchApplication</span>
-                <span class="method-start">58615 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SubmitOrder</span>
-                <span class="method-start">65176 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">TearDown</span>
-                <span class="method-start">89040 ms</span>
+                <span class="method-start">11427 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">LaunchApplication</span>
-                <span class="method-start">89603 ms</span>
+                <span class="method-start">11722 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LoginWithWrongPassword(rbtestayesha@gmail.com, Abcd@12)</span>
-                <span class="method-start">96403 ms</span>
+                <span class="method-name">TC003_invalidCredentialsTest</span>
+                <span class="method-start">15943 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">TearDown</span>
-                <span class="method-start">100216 ms</span>
+                <span class="method-start">16948 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApplication</span>
+                <span class="method-start">17248 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC005_emptyPasswordTest</span>
+                <span class="method-start">22455 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">23005 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApplication</span>
+                <span class="method-start">23280 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC006_emptyFieldsTest</span>
+                <span class="method-start">29903 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">30495 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">LaunchApplication</span>
+                <span class="method-start">30779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC007_invalidEmailFormatTest</span>
+                <span class="method-start">34946 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">35546 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
